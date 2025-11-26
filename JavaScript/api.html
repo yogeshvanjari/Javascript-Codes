@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script>
+
+    function api()
+    {
+           axios.get("https://api.rootnet.in/covid19-in/stats/latest")
+           .then(res=>{
+
+            console.log(res.data.data.summary.total)
+            document.getElementById("total").innerHTML=res.data.data.summary.total
+            console.log(res.data.data.summary.discharged)
+            document.getElementById("discharged").innerHTML=res.data.data.summary.discharged
+            console.log(res.data.data.summary.deaths)
+            document.getElementById("deaths").innerHTML=res.data.data.summary.deaths
+
+           })
+
+    }
+
+
+</script>
+<body onload="api()">
+    <center>
+      <h1> API CALL : </h1>
+      <h1>TOTAL : </h1>
+      <h2 id="total"></h2>
+       <h1> DISCHARGED : </h1>
+      <h2 id="discharged"></h2>
+        <h1>DEATHS : </h1>
+      <h2 id="deaths"></h2>
+
+    </center>
+    
+</body>
+</html>

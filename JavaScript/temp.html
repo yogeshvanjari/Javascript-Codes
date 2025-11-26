@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temp</title>
+</head>
+<script>
+
+    function display()
+    {
+ 
+        let name=document.getElementById("name").value;
+        if (name==1)   
+        {
+            document.getElementById("body").style.backgroundColor="red";
+            
+        } 
+            if (name==2)   
+        {
+            document.getElementById("body").style.backgroundColor="green";
+            
+        } 
+              if (name==3)   
+        {
+            document.getElementById("body").style.backgroundColor="pink";
+            
+        } 
+
+       
+
+    }
+</script>
+<body id="body">
+
+    <center>
+
+    <label for="">Enter Your Name</label>
+    <input type="text" id="name">
+
+    <input type="button"  onclick="display()" value="Change Color"> <br>
+
+
+    </center>
+    
+</body>
+</html>

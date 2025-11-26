@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+
+<script>
+
+    function display()
+    {
+      let name=document.getElementById("name").value;
+
+      if(name%2==0)
+      {
+      document.getElementById("result").innerHTML="EVEN"
+      document.getElementById("result").style.backgroundColor="Green";
+      }
+      else
+      {
+      document.getElementById("result").innerHTML="ODD"
+      document.getElementById("result").style.backgroundColor="Red";
+
+      }
+
+
+    }
+
+
+
+</script>
+<body>
+    <center>
+   <label for="">Enter Even Or Odd Number: </label>
+   <input type="text"  id="name">
+
+   <input type="button" onclick="display()" value="Check">
+
+   <h1 id="result"> Result </h1>
+
+    </center>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Array Operation </title>
+</head>
+<script>
+
+    // Sum Of All Array 
+
+    let arr=[1,2,3,4,5,6,7,8,9,10];
+    let sm=0;
+    for(let i=0;i<arr.length;i++)
+   {
+        console.log(arr[i]);
+        sm=sm+arr[i];
+   }
+    console.log("The Addition of given Array: "+sm);
+
+    // Small Number Of Given Array & Max Number Given Array 
+
+    
+    let sml;
+    let grt;
+    fstarr=1;
+
+    for(let i=0;i<arr.length;i++)
+   {
+    if (arr[i]<=fstarr)
+    {
+        sml=arr[i]
+    }
+     if (arr[i]>=fstarr)
+    {
+        grt=arr[i]
+    }
+
+   }
+
+    console.log("The Small Array of given Array: "+sml);
+    console.log("The Max Array of given Array: "+grt);
+
+
+
+
+</script>
+<body>
+    <h1> Array opreation </h1>
+</body>
+</html>

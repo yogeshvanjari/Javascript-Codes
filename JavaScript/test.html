@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <!-- Axios CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+  <script>
+    function api() {
+      axios.get("http://localhost:3000/contact")
+        .then(res => {
+          console.log(res.data);
+        })
+        .catch(err => {
+          console.error("Error fetching data:", err);
+        });
+    }
+  </script>
+</head>
+
+<body onload="api()">
+
+  <h2>Check Console for API Response</h2>
+
+</body>
+</html>

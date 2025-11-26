@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+</head>
+<script>
+
+    // Normal Function Without Parameter 
+
+
+     function test()  // Function Declaration OR Define
+     {
+     alert("This Is Test Function Output Print");
+     }
+     test(); // Function Call 
+
+
+     // Pramaterize Funtion
+
+     function add(a,b)
+     {
+      
+    console.log(a+b);
+
+     }
+
+     add(5,5);
+
+
+     // Formal Parameter And Actual Parameter 
+
+     function add(a,b) // Formal paramter
+     {
+      console.log(a+b);
+     }
+     
+     let x=10;
+     let y=20;
+     console.log(add(x,y)); // Actual Paramater
+
+
+     // Arrow Function 
+
+
+     function temp1()
+     {
+       console.log("Normal Function Temp1");
+     }
+
+     temp2=()=>
+     {
+       console.log("Arrow Function Temp2 It Can Contain *Function Keyword*");
+     }
+
+      // CallBack Function
+
+      function hello()
+      {
+       console.log(" Hello Function ");
+      }
+      function greet (name,CallBack)
+      {
+         console.log(CallBack);
+         console.log("Welcome");
+      }
+
+      greet("yogesh",hello())
+</script>
+<body>
+    <h1>Function Define And Call</h1>
+</body>
+</html>

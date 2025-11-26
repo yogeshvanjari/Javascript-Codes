@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Events </title>
+</head>
+<script>
+    function display()
+    {
+     let nam=document.getElementById("nam").value;
+     // alert("The Given Name is "+nam)
+     document.getElementById("head").innerHTML=nam;
+    }
+
+</script>
+<body>
+    <center>
+
+    <label for="">Name</label>
+    <input type="text" id="nam">
+
+    <input type="button" onclick="display()"   value="Get Name"><br>
+
+    <h1 id="head"> Display The Enter Name </h1>
+
+    </center>
+</body>
+</html>
